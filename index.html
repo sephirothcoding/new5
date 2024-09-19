@@ -34,6 +34,8 @@
     // Seph'ten (1538769249) doğrudan satın alınmadıkça hiçbir şekilde kullanılamaz, kopyalanamaz veya dağıtılamaz.
     // Kullanım, yalnızca xat.com ile sınırlıdır ve sahibin açık onayını gerektirir.
     // İzinsiz kullanım yasaktır ve yasal işlemlere tabidir. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,21 +174,47 @@
         .stars span:nth-child(4) { top: 60%; left: 60%; animation-duration: 6s; }
         .stars span:nth-child(5) { top: 80%; left: 80%; animation-duration: 4s; }
 
-        /* Butterfly Animation */
+        /* Butterfly Animations */
         .butterfly {
             position: absolute;
-            bottom: -100px;
-            left: 50%;
             width: 100px;
             height: auto;
-            animation: fly 10s infinite ease-in-out;
-            transform: translateX(-50%);
         }
 
-        @keyframes fly {
-            0% { transform: translate(-50%, 100vh) rotate(0deg); }
-            50% { transform: translate(-50%, 50vh) rotate(45deg); }
-            100% { transform: translate(-50%, -50vh) rotate(90deg); }
+        /* Butterfly 1 */
+        .butterfly1 {
+            bottom: -100px;
+            left: 30%;
+            animation: fly1 6s infinite ease-in-out;
+        }
+
+        @keyframes fly1 {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(180deg); }
+        }
+
+        /* Butterfly 2 */
+        .butterfly2 {
+            bottom: -100px;
+            left: 50%;
+            animation: fly2 8s infinite ease-in-out;
+        }
+
+        @keyframes fly2 {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(180deg); }
+        }
+
+        /* Butterfly 3 */
+        .butterfly3 {
+            bottom: -100px;
+            left: 70%;
+            animation: fly3 7s infinite ease-in-out;
+        }
+
+        @keyframes fly3 {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(180deg); }
         }
 
         /* Footer */
@@ -204,8 +232,10 @@
         <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <!-- Butterfly -->
-    <img src="https://xatimg.com/image/3dWQ531sDVB8.png" class="butterfly" alt="Butterfly">
+    <!-- Butterflies -->
+    <img src="https://xatimg.com/image/3dWQ531sDVB8.png" class="butterfly butterfly1" alt="Butterfly 1">
+    <img src="https://xatimg.com/image/3dWQ531sDVB8.png" class="butterfly butterfly2" alt="Butterfly 2">
+    <img src="https://xatimg.com/image/3dWQ531sDVB8.png" class="butterfly butterfly3" alt="Butterfly 3">
 
     <div class="container">
         <header class="header">
@@ -260,5 +290,4 @@
     </div>
 </body>
 </html>
-
 
