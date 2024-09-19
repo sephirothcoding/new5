@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral XatSpace Profile</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a0dad, #ffffff);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffe4e1;
+            text-shadow: 0 0 10px rgba(255,255,255,0.8);
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffd700;
+            }
+            to {
+                text-shadow: 0 0 20px #ffffff, 0 0 30px #ffd700;
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 2em;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ff69b4;
+        }
+
+        /* Containers */
+        .container-box {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+        
+        .container-box h2 {
+            color: #ffb6c1;
+            font-size: 2em;
+        }
+
+        /* Floral Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/floral-white.png');
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        /* Star Animation */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: black;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+
+        .stars span {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
+            animation: twinkling 5s infinite;
+        }
+
+        @keyframes twinkling {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        .stars span:nth-child(1) { top: 10%; left: 5%; animation-duration: 7s; }
+        .stars span:nth-child(2) { top: 20%; left: 20%; animation-duration: 8s; }
+        .stars span:nth-child(3) { top: 40%; left: 40%; animation-duration: 5s; }
+        .stars span:nth-child(4) { top: 60%; left: 60%; animation-duration: 6s; }
+        .stars span:nth-child(5) { top: 80%; left: 80%; animation-duration: 4s; }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #6a0dad;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff69b4;
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255,255,255,0.9);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.2em;
+            color: #ffe4e1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            Welcome to My Floral XatSpace!
+        </header>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">🌸 Facebook</a>
+            <a href="https://twitter.com" target="_blank">✨ Twitter</a>
+            <a href="https://instagram.com" target="_blank">🌷 Instagram</a>
+        </div>
+
+        <div class="container-box">
+            <h2>About Me</h2>
+            <p>Hello, I’m a flower lover who enjoys sharing floral photography and inspiration. I create content about nature’s beauty, art, and design. Welcome to my vibrant corner of XatSpace!</p>
+        </div>
+
+        <div class="container-box">
+            <h2>My Projects</h2>
+            <p>Check out my latest creative projects and floral designs. I bring the colors and textures of flowers into unique artistic formats.</p>
+            <button class="btn">View Projects</button>
+        </div>
+
+        <div class="container-box">
+            <h2>Follow My Journey</h2>
+            <p>Join me as I explore the world of flora and fauna, documenting every stunning bloom I find along the way!</p>
+            <button class="btn">Subscribe Now</button>
+        </div>
+
+        <footer class="footer">
+            © 2024 Floral XatSpace | Created with Love 💜
+        </footer>
+    </div>
+</body>
+</html>
