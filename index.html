@@ -13,12 +13,15 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            position: relative;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+            z-index: 1;
         }
         
         .header {
@@ -82,18 +85,19 @@
             height: 100%;
             background: url('https://www.transparenttextures.com/patterns/floral-white.png');
             opacity: 0.2;
-            z-index: -1;
+            z-index: -2;
         }
 
         /* Star Animation */
         .stars {
-            position: absolute;
+            position: fixed;
             width: 100%;
             height: 100%;
-            background: black;
+            background: transparent;
             overflow: hidden;
             top: 0;
             left: 0;
+            z-index: -1;
         }
 
         .stars span {
