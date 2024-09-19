@@ -34,6 +34,7 @@
     // Seph'ten (1538769249) doğrudan satın alınmadıkça hiçbir şekilde kullanılamaz, kopyalanamaz veya dağıtılamaz.
     // Kullanım, yalnızca xat.com ile sınırlıdır ve sahibin açık onayını gerektirir.
     // İzinsiz kullanım yasaktır ve yasal işlemlere tabidir. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,6 +173,23 @@
         .stars span:nth-child(4) { top: 60%; left: 60%; animation-duration: 6s; }
         .stars span:nth-child(5) { top: 80%; left: 80%; animation-duration: 4s; }
 
+        /* Butterfly Animation */
+        .butterfly {
+            position: absolute;
+            bottom: -100px;
+            left: 50%;
+            width: 100px;
+            height: auto;
+            animation: fly 10s infinite ease-in-out;
+            transform: translateX(-50%);
+        }
+
+        @keyframes fly {
+            0% { transform: translate(-50%, 100vh) rotate(0deg); }
+            50% { transform: translate(-50%, 50vh) rotate(45deg); }
+            100% { transform: translate(-50%, -50vh) rotate(90deg); }
+        }
+
         /* Footer */
         .footer {
             text-align: center;
@@ -186,6 +204,9 @@
     <div class="stars">
         <span></span><span></span><span></span><span></span><span></span>
     </div>
+
+    <!-- Butterfly -->
+    <img src="https://xatimg.com/image/3dWQ531sDVB8.png" class="butterfly" alt="Butterfly">
 
     <div class="container">
         <header class="header">
@@ -240,3 +261,4 @@
     </div>
 </body>
 </html>
+
