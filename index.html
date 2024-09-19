@@ -1,3 +1,39 @@
+
+<!-- Copyright Notice
+    // All images and code contained in this project are the sole property of Seph (1538769249).
+    // They may not be used, copied, or redistributed in any form unless purchased directly from Seph (1538769249).
+    // Usage is strictly limited to xat.com and requires the explicit approval of the owner.
+    // Unauthorized use is prohibited and subject to legal action.
+
+    // Notificare de Copyright
+    // Toate imaginile și codul conținut în acest proiect sunt proprietatea exclusivă a lui Seph (1538769249).
+    // Acestea nu pot fi utilizate, copiate sau redistribuite sub nicio formă decât dacă sunt achiziționate direct de la Seph (1538769249).
+    // Utilizarea este strict limitată la xat.com și necesită aprobarea explicită a proprietarului.
+    // Utilizarea neautorizată este interzisă și se supune acțiunilor legale.
+
+    // Aviso de Direitos Autorais
+    // Todas as imagens e códigos contidos neste projeto são propriedade exclusiva de Seph (1538769249).
+    // Eles não podem ser usados, copiados ou redistribuídos de nenhuma forma, a menos que sejam comprados diretamente de Seph (1538769249).
+    // O uso é estritamente limitado ao xat.com e requer a aprovação explícita do proprietário.
+    // O uso não autorizado é proibido e está sujeito a ação legal.
+
+    // Aviso de Derechos de Autor
+    // Todas las imágenes y el código contenidos en este proyecto son propiedad exclusiva de Seph (1538769249).
+    // No pueden ser utilizados, copiados o redistribuidos de ninguna forma a menos que se compren directamente a Seph (1538769249).
+    // El uso está estrictamente limitado a xat.com y requiere la aprobación explícita del propietario.
+    // El uso no autorizado está prohibido y está sujeto a acciones legales.
+
+    // Avviso di Copyright
+    // Tutte le immagini e il codice contenuti in questo progetto sono di proprietà esclusiva di Seph (1538769249).
+    // Non possono essere utilizzati, copiati o ridistribuiti in alcuna forma a meno che non siano acquistati direttamente da Seph (1538769249).
+    // L'uso è strettamente limitato a xat.com e richiede l'approvazione esplicita del proprietario.
+    // L'uso non autorizzato è proibito ed è soggetto ad azioni legali.
+
+    // Telif Hakkı Bildirimi
+    // Bu projedeki tüm resimler ve kodlar Seph'e (1538769249) aittir.
+    // Seph'ten (1538769249) doğrudan satın alınmadıkça hiçbir şekilde kullanılamaz, kopyalanamaz veya dağıtılamaz.
+    // Kullanım, yalnızca xat.com ile sınırlıdır ve sahibin açık onayını gerektirir.
+    // İzinsiz kullanım yasaktır ve yasal işlemlere tabidir. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,29 +86,44 @@
 
         .social-icons a {
             margin: 0 10px;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 2em;
-            transition: transform 0.3s, color 0.3s;
         }
 
-        .social-icons a:hover {
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .social-icons img:hover {
             transform: scale(1.2);
-            color: #ff69b4;
+            filter: drop-shadow(0 0 5px #ff69b4);
         }
 
         /* Containers */
+        .container-boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
         .container-box {
             background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
             box-shadow: 0 0 10px rgba(255,255,255,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .container-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(255,255,255,0.9);
         }
         
         .container-box h2 {
             color: #ffb6c1;
-            font-size: 2em;
+            font-size: 1.5em;
+            margin: 10px 0;
         }
 
         /* Floral Background */
@@ -121,26 +172,6 @@
         .stars span:nth-child(4) { top: 60%; left: 60%; animation-duration: 6s; }
         .stars span:nth-child(5) { top: 80%; left: 80%; animation-duration: 4s; }
 
-        /* Button Styles */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            color: #fff;
-            background-color: #6a0dad;
-            border: none;
-            border-radius: 25px;
-            box-shadow: 0 0 15px rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #ff69b4;
-            transform: scale(1.1);
-            box-shadow: 0 0 30px rgba(255,255,255,0.9);
-        }
-
         /* Footer */
         .footer {
             text-align: center;
@@ -162,26 +193,45 @@
         </header>
 
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank">🌸 Facebook</a>
-            <a href="https://twitter.com" target="_blank">✨ Twitter</a>
-            <a href="https://instagram.com" target="_blank">🌷 Instagram</a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
+            </a>
         </div>
 
-        <div class="container-box">
-            <h2>About Me</h2>
-            <p>Hello, I’m a flower lover who enjoys sharing floral photography and inspiration. I create content about nature’s beauty, art, and design. Welcome to my vibrant corner of XatSpace!</p>
-        </div>
-
-        <div class="container-box">
-            <h2>My Projects</h2>
-            <p>Check out my latest creative projects and floral designs. I bring the colors and textures of flowers into unique artistic formats.</p>
-            <button class="btn">View Projects</button>
-        </div>
-
-        <div class="container-box">
-            <h2>Follow My Journey</h2>
-            <p>Join me as I explore the world of flora and fauna, documenting every stunning bloom I find along the way!</p>
-            <button class="btn">Subscribe Now</button>
+        <div class="container-boxes">
+            <div class="container-box">
+                <h2>About Me</h2>
+                <p>Learn more about my passion for flowers and creativity.</p>
+            </div>
+            <div class="container-box">
+                <h2>Games</h2>
+                <p>Discover the fun games I enjoy playing online!</p>
+            </div>
+            <div class="container-box">
+                <h2>Contact</h2>
+                <p>Feel free to reach out for collaborations or just to chat.</p>
+            </div>
+            <div class="container-box">
+                <h2>My Chats</h2>
+                <p>Join my latest group chats and discussions on Xat.</p>
+            </div>
+            <div class="container-box">
+                <h2>My Forum Profile</h2>
+                <p>Check out my forum profile and see my contributions.</p>
+            </div>
+            <div class="container-box">
+                <h2>My Zodiac Sign</h2>
+                <p>Find out my zodiac sign and how it reflects my personality!</p>
+            </div>
         </div>
 
         <footer class="footer">
